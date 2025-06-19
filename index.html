@@ -67,7 +67,7 @@
         input[type="text"],
         input[type="email"],
         textarea {
-            background-color: white;
+            background-color: white; /* Ensure background matches container */
             border: 1px solid #e0e0e0;
             padding: 0.75rem 1rem;
             border-radius: 0.375rem;
@@ -76,114 +76,9 @@
         input[type="text"]:focus,
         input[type="email"]:focus,
         textarea:focus {
-            border-color: #2563eb;
+            border-color: #2563eb; /* Matches text-blue-600 */
             outline: none;
-            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
-        }
-
-        /* Dark Mode Styles */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #1a202c; /* Dark charcoal */
-                color: #e2e8f0; /* Light gray text */
-            }
-            .section-title {
-                color: #f8f8f8; /* Lighter title for dark mode */
-            }
-            .section-title::after {
-                background-color: #a3b18a; /* Keep subtle accent */
-            }
-            .nav-link {
-                color: #cbd5e0; /* Lighter gray for nav links */
-            }
-            .nav-link:hover {
-                color: #90cdf4; /* Lighter blue on hover */
-            }
-            .btn-primary {
-                background-color: #63b3ed; /* Lighter blue for primary button */
-                color: #1a202c; /* Dark text on light button */
-            }
-            .btn-primary:hover {
-                background-color: #90cdf4; /* Even lighter blue on hover */
-            }
-            /* Adjusting Tailwind classes that define explicit colors */
-            .text-gray-900 {
-                color: #f8f8f8; /* Header Vishva Kant */
-            }
-            .text-gray-700 {
-                color: #cbd5e0; /* Body text, paragraph text */
-            }
-            .text-blue-600 {
-                color: #90cdf4; /* Highlight Vishva Kant in home */
-            }
-            .bg-white {
-                background-color: #2d3748; /* Darker header/section background */
-            }
-            .bg-gradient-to-r {
-                background-image: linear-gradient(to right, #2d3748, #4a5568); /* Darker gradient for home */
-            }
-            .bg-gray-50 {
-                background-color: #2d3748; /* Darker skills/contact section background */
-            }
-            .card {
-                background-color: #2d3748; /* Darker card background */
-                border-color: #4a5568; /* Darker border for definition */
-            }
-            .card:hover {
-                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* More pronounced dark shadow */
-            }
-            .text-blue-700 {
-                color: #90cdf4; /* Light blue for skill titles */
-            }
-            .text-green-700 {
-                color: #81e6d9; /* Light green for skill titles */
-            }
-            .text-purple-700 {
-                color: #d6bcfa; /* Light purple for skill titles */
-            }
-            .text-orange-700 {
-                color: #feb2b2; /* Light orange for skill titles */
-            }
-            .text-red-700 {
-                color: #fc8181; /* Light red for skill titles */
-            }
-            .text-teal-700 {
-                color: #81e6d9; /* Light teal for skill titles */
-            }
-            .text-pink-600 {
-                color: #fbb6ce; /* Lighter pink for project tags */
-            }
-            .text-yellow-600 {
-                color: #fbd38d; /* Lighter yellow for project tags */
-            }
-            .text-indigo-600 {
-                color: #a3bbfb; /* Lighter indigo for project tags */
-            }
-            input[type="text"],
-            input[type="email"],
-            textarea {
-                background-color: #2d3748; /* Darker input background */
-                border-color: #4a5568; /* Darker input border */
-                color: #e2e8f0; /* Light text in inputs */
-            }
-            input[type="text"]:focus,
-            input[type="email"]:focus,
-            textarea:focus {
-                border-color: #90cdf4; /* Light blue focus border */
-                box-shadow: 0 0 0 2px rgba(144, 205, 244, 0.2); /* Subtle light blue shadow */
-            }
-            .text-gray-600 {
-                color: #a0aec0; /* Lighter gray for footer text */
-            }
-            .text-gray-400 {
-                color: #718096; /* Slightly darker gray for separators */
-            }
-            .text-blue-500 {
-                color: #90cdf4; /* Lighter blue for links */
-            }
-            .bg-gray-100 {
-                background-color: #2d3748; /* Darker footer background */
-            }
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2); /* Subtle focus ring using rgba of blue-600 */
         }
     </style>
 </head>
